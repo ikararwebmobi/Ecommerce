@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Welcome | Shopperoo</title>
+    <!--
+=====================================================================
+	CSS
+=====================================================================
+-->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <!--
+=====================================================================
+	JS
+=====================================================================
+-->
+  </head>
+
+  <body>
+    <!--
+-----------------------------------------------------
+	HEADER
+-----------------------------------------------------
+-->
+    <header id="header" class="header">
+      <div class="topbar">
+        <div class="container-xxl">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto d-xxl-block d-none">
+              <div
+                class="topbar-left text-muted d-flex align-items-center py-1"
+              >
+                <i class="la la-map-marker la-lg"></i>
+                <p class="text-muted mb-0 text-xs">
+                  27 Abbey Road, SE1 2TY, London,UK
+                </p>
+              </div>
+            </div>
+            <div class="col-xxl-7 d-lg-block d-none text-center">
+              <div class="topbar-offer-slider">
+                <div class="topbar-offer py-1">
+                  <h6 class="text-xs mb-0">
+                    Something you love is now on sale!
+                    <a href="#" class="text-dark">Buy now</a>
+                  </h6>
+                </div>
+                <div class="topbar-offer py-1">
+                  <h6 class="text-xs mb-0">
+                    Supper Value Deals - Save more with coupons
+                    <a href="#" class="text-dark">Buy now</a>
+                  </h6>
+                </div>
+                <div class="topbar-offer py-1">
+                  <h6 class="text-xs mb-0">
+                    Something you love is now on sale!
+                    <a href="#" class="text-dark">Buy now</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <ul
+                class="topbar-nav d-flex justify-content-between list-unstyled mb-0"
+              >
+                <li class="topbar-navitem">
+                  <div class="btn dropdown">
+                    <a
+                      class="topbar-navlink dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      English
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Arabic</a></li>
+                      <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="topbar-navitem">
+                  <div class="dropdown theme-form-select">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="select-dollar"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>USD</span>
+                    </button>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end sm-dropdown-menu"
+                      aria-labelledby="select-dollar"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          id="aud"
+                          href="javascript:void(0)"
+                          >AUD</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          id="eur"
+                          href="javascript:void(0)"
+                          >EUR</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          id="cny"
+                          href="javascript:void(0)"
+                          >CNY</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-middle-wrap bg-white">
+        <div class="container-xl">
+          <div class="header-middle-module">
+            <div class="row row-small align-items-center">
+              <div class="col col-lg-3 d-flex justify-content-between">
+                <a class="navbar-brand py-3" href="index.html">
+                  <img
+                    src="images/logo/shopperoo-logo.png"
+                    alt="shopperoo"
+                    class="img-fluid"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler d-lg-none border-0 my-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainNavigation"
+                  aria-controls="mainNavigation"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="col-lg-9">
+                <div
+                  class="row py-md-3 d-md-flex justify-content-center justify-content-lg-between align-items-center"
+                >
+                  <div class="col-xl">
+                    <div class="search-wrap ml-lg-5 mb-3 mb-md-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search"
+                      />
+                      <button type="submit" class="btn-search">
+                        <i class="la la-search la-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-auto">
+                    <div
+                      class="header-users-links d-flex justify-content-center"
+                    >
+                      <ul class="userlinks-lists">
+                        <li>
+                          <a href="#" class="wishlist-link" title="Wishlist">
+                            <i class="la la-phone la-lg"></i>
+                            <div class="users-links-detail ms-2">
+                              <span class="text-dark text-xs">Call Us,</span>
+                              <h5 class="text-primary text-md">1900 - 888</h5>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#" class="wishlist-link" title="Wishlist">
+                            <i class="lar la-heart la-lg"></i>
+                            <span class="badge wishlist-count">12</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="cart-link" title="Cart">
+                            <i class="la la-shopping-bag la-lg"></i>
+                            <span class="badge cart-count">2</span>
+                          </a>
+                        </li>
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="login-link dropdown"
+                            data-bs-toggle="dropdown"
+                          >
+                            <i class="la la-user la-lg"></i>
+                            <div class="users-links-detail ms-2">
+                              <span class="text-dark text-xs">Hello,</span>
+                              <h5 class="text-dark text-xs">My Account</h5>
+                            </div>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Log In</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Register</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Forgot Password</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        class="navigation-wrapper navbar navbar-expand-lg p-0 justify-content-end py-2"
+      >
+        <div class="container-xl">
+          <div
+            id="mainNavigation"
+            class="collapse navbar-collapse w-100 justify-content-between"
+          >
+            <div class="categories-dropdown dropdown">
+              <a href="" class="btn btn-category btn-block btn-white">
+                <i class="la la-bars la-lg"></i> Categories</a
+              >
+            </div>
+
+            <ul class="navbar-nav main-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hot Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+
+            <div class="categories-dropdown dropdown">
+              <div class="categories-dropdown dropdown">
+                <a href="#" class="btn btn-block btn-white">
+                  <i class="la la-tags la-lg"></i> Daily Deals</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--
+-----------------------------------------------------
+	BANNER
+-----------------------------------------------------
+-->
+
+    <!--
+-----------------------------------------------------
+	FOOTER
+-----------------------------------------------------
+-->
+    <footer class="footer py-3 py-md-5 d-none bg-dark">
+      <div class="container-xl">
+        <div class="row pb-3">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="footer-widget">
+              <a class="footer-logo pb-3" href="#">
+                <img
+                  src="images/logo/cardzlabz-logo.png"
+                  alt="Cardzlabz"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="footer-contacts py-3">
+                <a href="tel:+97125533474"
+                  ><i class="la la-phone-volume la-lg mr-1"></i>
+                  +97125533474
+                </a>
+                <a href="mailto:company@info.com"
+                  ><i class="la la-envelope la-lg mr-1"></i>+company@info.com
+                </a>
+              </div>
+              <ul
+                class="social-links list-inline mb-0 text-center text-md-left"
+              >
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><i class="lab la-facebook-f la-lg"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><i class="lab la-instagram la-lg"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><i class="lab la-twitter la-lg"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link" href="#"
+                    ><i class="lab la-pinterest-p la-lg"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md">
+            <div class="footer-widget">
+              <h6 class="footer-widget-title">Company</h6>
+              <ul class="footer-widget-links list-inline">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get in Touch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Customer Stories</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md">
+            <div class="footer-widget">
+              <h6 class="footer-widget-title">Sevices</h6>
+              <ul class="footer-widget-links list-inline">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Stores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Custom Furniture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sell on Furni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Exporters</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Buy in Bulk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Refer &amp; Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Delivery Location</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md">
+            <div class="footer-widget">
+              <h6 class="footer-widget-title">Policies</h6>
+              <ul class="footer-widget-links list-inline">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms of Use</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Security</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Return &amp; Refund</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Payment Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="footer-widget">
+              <h6 class="footer-widget-title">Subscribe Now</h6>
+              <p>
+                Stay up to date with all the actions that we are saved for all
+                our customers.
+              </p>
+              <div class="input-subscribe mb-lg-3 mb-1">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <button class="btn">
+                  <i class="la la-long-arrow-alt-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright text-center">
+          <p class="mb-0">&copy; 2022-23 CardzLabz.. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--
+=====================================================================
+	JS
+=====================================================================
+-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>

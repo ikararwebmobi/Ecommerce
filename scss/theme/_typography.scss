@@ -1,0 +1,58 @@
+$text-xs: 0.75rem;
+$text-sm: 0.875rem;
+$text-base: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+$text-md: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+$text-lg: clamp(1.05rem, -0.1034rem + 2.406vw, 1.375rem);
+$text-xl: clamp(1.25rem, -0.1917rem + 3.0075vw, 1.563rem);
+$text-2xl: clamp(1.5rem, -0.6626rem + 4.5113vw, 1.875rem);
+$text-3xl: clamp(1.875rem, -1.7293rem + 7.5188vw, 2.5rem);
+$text-4x: clamp(2rem, -4.4878rem + 13.5338vw, 3.125rem);
+$text-5xl: clamp(3rem, -1.3252rem + 9.0226vw, 4.375rem);
+$text-6xl: clamp(4rem, 0.15rem + 7vw, 4.75rem);
+
+$font-family-sans-serif: "Inter", Roboto, "Helvetica Neue", "Noto Sans",
+  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-base {
+  font-size: $text-base;
+}
+
+.text-lg {
+  font-size: $text-lg;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+.text-2xl {
+  font-size: $text-2xl;
+}
+
+.text-3xl {
+  font-size: $text-3xl;
+}
+
+.text-4x {
+  font-size: $text-4x;
+}
+
+.text-5xl {
+  font-size: $text-5xl;
+}
+
+.text-6xl {
+  font-size: $text-6xl;
+}
+body {
+  font-family: $font-family-sans-serif;
+}

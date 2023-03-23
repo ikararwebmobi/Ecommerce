@@ -1,0 +1,31 @@
+@import "../bootstrap/scss/functions";
+
+$primary: #e63946;
+$secondary: #e76f51;
+$success: #2a9d8f;
+$danger: #ff4136;
+$dark: #1d3557;
+$white: #ffffff;
+
+$body-bg: #f0f1f2;
+$body-color: $dark;
+$min-contrast-ratio: 3.5 !default;
+
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+//@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/buttons";
+
+.btn-white {
+  @include button-variant($white, $white);
+}
+
+.btn-soft-primary {
+  @include button-variant(
+    lighten($primary, 25%),
+    $primary,
+    darken($primary, 20%)
+  );
+}

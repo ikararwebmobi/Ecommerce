@@ -1,0 +1,19 @@
+.topbar {
+  margin: 0;
+  background-color: $white;
+  border-bottom: 1px solid $gray-200;
+  .topbar-nav {
+    .topbar-navlink,
+    .btn {
+      color: $gray-600;
+      text-decoration: none;
+      font-size: $text-xs;
+    }
+    .dropdown-menu {
+      font-size: $text-xs;
+    }
+  }
+  .topbar-offer {
+    color: $gray-600;
+  }
+}
