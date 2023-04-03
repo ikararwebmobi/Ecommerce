@@ -1,0 +1,9 @@
+.promotion-wrapper {
+	position: relative;
+	z-index: 10;
+	background-size:cover;
+    .promotion-card .card-img-overlay {
+        left: auto;
+        right:50px;
+    }
+}

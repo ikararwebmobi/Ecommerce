@@ -1,0 +1,48 @@
+@import "../bootstrap/functions";
+
+
+//COLORS THEME
+$primary: #FF0952;
+$primary-soft: #ff8bac;
+$secondary: #7408bc;
+$success: #2a9d8f;
+$danger: #ff4136;
+$dark: #1a1415;
+$info: #2da8e5;
+$light: #ffe9ef;
+$body-bg: #f0f1f2;
+$body-color: #495057;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #1a1415;
+$black: #000;
+
+@import "../bootstrap/variables";
+
+$min-contrast-ratio: 2;
+
+$custom-theme-colors:(
+  "primary-soft":  #ff8bac,
+  "white": #ffffff,
+  "fancy": #07b2af,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+
+@import "../bootstrap/maps";
+@import "../bootstrap/mixins";
+@import "../bootstrap/root";
+
+
+@import "../bootstrap/buttons";
+@import "../bootstrap/dropdown";
+
+

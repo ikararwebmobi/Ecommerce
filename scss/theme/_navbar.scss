@@ -1,5 +1,8 @@
 .navbar-brand {
   max-width: 200px;
+  @include for-size(mobile){
+    max-width:120px;
+  }
 }
 .search-wrap {
   position: relative;
@@ -13,9 +16,12 @@
     border-color: rgba($dark, 0.25);
     color: $gray-800;
     font-size: 0.95rem;
-
     @include placeholder {
       color: $gray-500;
+    }
+    @include for-size(mobile){
+      height: calc(1.5em + 0.75rem + 2px);
+      padding: 1rem 3rem 1rem 1rem;
     }
   }
 
@@ -31,20 +37,18 @@
 }
 
 .header-users-links {
-  > .userlinks-lists {
+   .userlinks-lists {
     list-style: none;
     margin: 0;
     padding: 0;
     list-style: none;
     @include flex-item(row, center, center);
-    > li {
+    &> li {
       position: relative;
       padding-left: 3rem;
-      > a {
+       a {
         color: $gray-600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-item(row, start, center);
         text-decoration: none;
         font-size: $text-xs;
         position: relative;
@@ -65,7 +69,7 @@
           width: 20px;
         }
       }
-      > &:not(:last-child):before {
+      &:not(:last-child):before {
         content: "";
         position: absolute;
         top: 50%;
@@ -82,6 +86,28 @@
       color: $primary;
     }
   }
+  @include for-size(upmd){
+    position:absolute;
+    top: 48px;
+    right:60px;
+    .userlinks-lists{
+     > li {
+      padding-left: 1rem;
+       a {
+        color: $gray-600;
+        i {
+          font-size: 1.5rem;
+        }
+        .users-links-detail{
+          display: none;
+        }
+      }
+      &:not(:last-child):before {
+        display: none;
+      }
+     }
+}
+}
 }
 .navbar-toggler {
   .navbar-toggler-icon {
@@ -127,12 +153,25 @@
     }
   }
 }
-.btn.btn-category {
-  border-radius: 0.5rem 0.5rem 0 0;
-  padding: 0.5rem 2.5rem;
-  top: 0.5rem;
-  position: relative;
+.categories-dropdown{
+  @include for-size(desktop){
+    top: 0.5rem;
+    position: relative;
+    .btn{
+      border-radius: 0.5rem 0.5rem 0 0;
+      padding: 0.5rem 2.5rem;
+    }
+  }
+
+  .dropdown-menu{
+    min-width: 100%;
+    border: 0;
+    border-radius: 0 0 .25rem .25rem;
+  }
+
 }
+
+
 .navigation-wrapper {
   background-color: $primary;
   border-top: 1px solid $gray-200;
@@ -208,10 +247,11 @@
       }
 
       &:hover {
-        .nav-link {
-          //  background-color: $white;
-          // color: $dark;
+       /* .nav-link {
+           background-color: $white;
+           color: $dark;
         }
+        */
 
         .dropdown-menu {
           opacity: 1;
@@ -231,7 +271,7 @@
     z-index: 300;
     height: 100vh;
     overflow: auto;
-    background-color: $white;
+    background-color: $dark;
     box-shadow: 0 5px 15px 20px rgba($primary, 0.15);
     width: 80%;
     max-width: 260px;

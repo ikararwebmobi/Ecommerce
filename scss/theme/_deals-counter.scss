@@ -1,0 +1,18 @@
+.countdown_box{
+    text-align: center;
+    @include flex-item(column, center,center);
+    &:not(:first-child){
+        margin-left:1rem
+    }
+    .countdown_num{
+       @include flex-item(row, center,center);
+       background-color: rgba($dark,.25);
+       border-radius: 0.5rem;
+       padding:1rem;
+       margin:0 0 .5rem 0;
+       width: 60px;
+       height:60px;
+       font-size:$text-lg;
+       font-weight:600;
+    }
+}

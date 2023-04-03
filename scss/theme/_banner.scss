@@ -1,0 +1,64 @@
+.banner-wrapper {
+	position: relative;
+	z-index: 2;
+	.carousel-item{
+		img {
+			position: relative;
+			object-fit:cover;
+			@include for-size(mobile){
+				min-height: 380px;
+			}
+		}
+	}
+	.carousel-control-prev{
+		height:3rem;
+		width:3rem;
+		text-align:center;
+		position:absolute;
+		bottom:10%;
+		left: 0;
+		top: 50%;
+		margin:0 1.5rem;
+		z-index:100;
+		background-color: #fff;
+		//transform: rotate(45deg);
+		i{
+			//transform: rotate(-45deg);
+
+		}
+	}
+	.carousel-control-next{
+		@extend .carousel-control-prev;
+	   left: auto;
+	   right: 0;
+	   i{
+		//transform: rotate(-45deg);
+	   }
+	}
+	.carousel-control-prev-icon,  .carousel-control-next-icon{
+	   background: none;
+	}
+}
+.banner-caption {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	width: 100%;
+	z-index: 10;
+	.banner-text{
+		position:relative;
+		z-index:2;
+		.banner-subtitle{
+			font-weight: 400;
+			font-size: $text-md;
+			text-transform:uppercase;
+		}
+		.banner-title {
+			font-weight: 700;
+			font-size: $text-5xl;
+			color: $dark;
+		}
+	}
+}
